@@ -2,9 +2,7 @@
 <?php get_sidebar(); ?>
 </div>
 <footer id="footer" role="contentinfo">
-    <div id="copyright">
-        &copy; <?php echo esc_html(date_i18n(__('Y', 'blankslate'))); ?> <?php echo esc_html(get_bloginfo('name')); ?>
-    </div>
+    <a href="http://planty3.local/?page_id=3">Mentions légales</a>
 </footer>
 </div>
 <?php wp_footer(); ?>
