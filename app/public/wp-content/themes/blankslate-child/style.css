@@ -92,9 +92,21 @@ a {
     display: none;
 }
 
+.admin {
+    padding-right: 1.5em;
+}
+
+/* ************************ MENU BURGER ************************ */
+
+
+
 
 /* ************************ STYLE ACCUEIL ********************** */
-
+#home-banner {
+    border-bottom: 8px solid #E3D9D0;
+    border-bottom-left-radius: 50% 9%;
+    border-bottom-right-radius: 50% 9%;
+}
 
 /*filter: drop-shadow(-3px -1px 4px rgb(0, 0, 0));*/
 /* ************************ STYLE COMMANDER ***************** */
@@ -104,15 +116,20 @@ a {
     justify-content: space-between;
 }
 
+#wpforms-form-366 .wpforms-field-container {
+    width: 50%;
+}
+
 #wpforms-366-field_1 {
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    padding-left: 20%;
 }
 
 #wpforms-366-field_1-container {
     background: #fff;
     border-radius: 5px;
-    width: 82px;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -122,17 +139,27 @@ a {
 
 
 #wpforms-form-366 .wpforms-submit-container {
-
     padding: 0;
     margin: 0;
+    width: 50%;
 }
 
 #wpforms-submit-366 {
-    width: 100px;
+    width: 99%;
 }
 
-.e-con-inner>div {
-    padding: 0;
+#wpforms-submit-366:hover {
+    background: var(--background-btn-hover);
+}
+
+.elementor-element-11d6f97 {
+    border-left: solid 1px var(--text-color-w);
+    width: 31.281rem;
+}
+
+.elementor-element-9da7d99 .elementor-widget-container {
+    position: relative;
+    top: -25px;
 }
 
 /* ************************************** style bouton quantite ************************ */
@@ -158,6 +185,8 @@ input[type="number"] {
 
 .wpforms-field-number {
     position: relative;
+
+
 }
 
 /* Styles pour le bouton + */
@@ -173,6 +202,7 @@ input[type="number"] {
     border-top-right-radius: 5px;
     text-align: center;
     font-size: 1.25rem;
+    cursor: pointer;
 }
 
 /* Styles pour le bouton - */
@@ -188,14 +218,22 @@ input[type="number"] {
     border-bottom-right-radius: 5px;
     text-align: center;
     font-size: 1.25rem;
-    /* Espacement à droite du bouton - */
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*faire disparaitre le focus du champ nombre*/
+#wpforms-366-field_1:focus {
+    border: none;
+    box-shadow: none;
 }
 
 
-
 /* ********************************* STYLE FORMULAIRE CONTACT *************************** */
+
 #wpforms-form-396 {
-    width: 62.5rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
 #wpforms-form-396 .wpforms-field-container {
@@ -224,15 +262,6 @@ input[type="number"] {
     padding-left: 50px;
 }
 
-#wpforms-form-396 .wpforms-submit-container {
-    text-align: center;
-    padding: 30px 0 60px 0;
-}
-
-#wpforms-submit-396 {
-    width: 198px;
-}
-
 #wpforms-396-field_2,
 #wpforms-396-field_3,
 #wpforms-396-field_8 {
@@ -243,6 +272,19 @@ input[type="number"] {
 #wpforms-396-field_6,
 #wpforms-396-field_7 {
     max-width: 100%;
+}
+
+#wpforms-form-396 .wpforms-submit-container {
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
+
+#wpforms-submit-396 {
+    width: 198px;
+}
+
+#wpforms-submit-396:hover {
+    background: var(--background-btn-hover);
 }
 
 
@@ -258,6 +300,8 @@ footer {
 
 
 /* ************************ responsive *************************** */
+/*@media screen and (max-width: 360px) {*/
+
 @media (max-width:650px) {
     .logo {
         width: 120px;
@@ -267,7 +311,7 @@ footer {
     .menu {
         width: 150px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: flex-end;
     }
 
@@ -281,8 +325,93 @@ footer {
         height: 40%;
     }
 
+
+    #wpforms-396-field_2-container {
+        padding-top: 2.2em;
+    }
+
+    #wpforms-396-field_2-container>label {
+        font-size: 1em;
+    }
+
+    #wpforms-396-field_2-container,
+    #wpforms-396-field_3-container,
+    #wpforms-396-field_8-container {
+        padding-left: 1em;
+    }
+
+    #wpforms-396-field_5-container,
+    #wpforms-396-field_6-container,
+    #wpforms-396-field_7-container {
+        padding-left: 1em;
+        width: 90%;
+    }
+
     footer {
         margin: 15px;
     }
 
 }
+
+/*.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: solid 3px var(--background-btn-hover);
+    height: 70%;
+    padding: 15px;
+    margin-right: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--background-btn-nav);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle-icon::before,
+.menu-toggle-icon::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--background-btn-nav);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle-icon::before {
+    top: -6px;
+}
+
+.menu-toggle-icon::after {
+    bottom: -6px;
+}*/
+
+/*.menu-toggle {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 1rem;
+    }
+
+    #menu .open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu li {
+        margin: 1rem 0;
+    }*/
