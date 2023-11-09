@@ -19,7 +19,7 @@
             <button class="menu-toggle" aria-controls="menu" aria-expanded="false">
                 <span class="menu-toggle-icon"></span>
             </button>
--->
+            -->
             <nav id="menu" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                 <?php wp_nav_menu(array('theme_location' => 'main-menu', 'link_before' => '<span itemprop="name">', 'link_after' => '</span>')); ?>
 
@@ -29,7 +29,8 @@
 
         <main>
 
-            <!-- <script type="text/javascript">
+            <!--
+             <script type="text/javascript">
                 const menuToggle = document.querySelector(".menu-toggle");
                 const menuContainer = document.querySelector("#menu");
 
@@ -37,4 +38,5 @@
                     menuToggle.classList.toggle("open");
                     menuContainer.classList.toggle("open");
                 });
-            </script>-->
+            </script>
+        -->

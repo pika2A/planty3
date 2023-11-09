@@ -310,9 +310,8 @@ footer {
 
 /* ************************ responsive *************************** */
 
-@media (max-width:650px) {
+@media screen and (max-width:650px) {
     .logo {
-        width: 150px;
         object-fit: contain;
     }
 
@@ -357,14 +356,15 @@ footer {
 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 590px) {
 
     .nav-bar {
-        flex-direction: column;
-        height: 150px;
+        flex-direction: column-reverse;
+        height: 100%;
         justify-content: end;
         padding: 0;
         align-items: center;
+        gap: 20px;
     }
 
     .logo {
@@ -377,7 +377,7 @@ footer {
 
     .menu {
         width: 100%;
-        height: 70px;
+        height: 60px;
         justify-content: space-between;
         align-items: center;
     }
@@ -397,7 +397,9 @@ footer {
     }
 }
 
-/*.menu-toggle {
+/**********************burger*************************/
+/*
+.menu-toggle {
     display: none;
     background-color: transparent;
     border: solid 3px var(--background-btn-hover);
@@ -435,9 +437,10 @@ footer {
 
 .menu-toggle-icon::after {
     bottom: -6px;
-}*/
+}
 
-/*.menu-toggle {
+@media screen and (max-width: 590px) {
+    .menu-toggle {
         display: block;
     }
 
@@ -458,4 +461,6 @@ footer {
 
     #menu li {
         margin: 1rem 0;
-    }*/
+    }
+}
+*/
