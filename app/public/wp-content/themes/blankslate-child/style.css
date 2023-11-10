@@ -40,8 +40,6 @@ a {
     color: var(--text-color-b);
 }
 
-
-
 /* ********************* STYLE HEADER ************************* */
 
 .nav-bar {
@@ -100,15 +98,6 @@ a {
 .admin {
     padding-right: 1.5em;
 }
-
-.menu-item-14 a:active {
-    font-weight: 700 !important;
-}
-
-/* ************************ MENU BURGER ************************ */
-
-
-
 
 /* ************************ STYLE ACCUEIL ********************** */
 #home-banner {
@@ -239,6 +228,9 @@ input[type="number"] {
 
 
 /* ********************************* STYLE FORMULAIRE CONTACT *************************** */
+.wpforms-required-label {
+    display: none;
+}
 
 #wpforms-form-396 {
     width: 100%;
@@ -310,7 +302,7 @@ footer {
 
 /* ************************ responsive *************************** */
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:770px) {
     .logo {
         object-fit: contain;
     }
@@ -350,6 +342,12 @@ footer {
         width: 90%;
     }
 
+    #wpforms-396-field_5-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
     footer {
         margin: 15px;
     }
@@ -377,7 +375,7 @@ footer {
 
     .menu {
         width: 100%;
-        height: 60px;
+        height: 50px;
         justify-content: space-between;
         align-items: center;
     }
