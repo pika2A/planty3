@@ -34,7 +34,7 @@ function ajouter_lien_admin($items, $args)
         $args->theme_location == 'main-menu'
     ) { //si l'utilisateur est connecté
         if (is_user_logged_in()) {
-            $admin_link = '<li class="admin"><a href="' . esc_url(admin_url()) . '">Admin</a></li>';
+            $admin_link = '<li class="admin"><a href="' . esc_url(admin_url()) . '">Admin</a>';
             $items_array = explode('</li>', $items);
             //La fonction explode est utilisée pour diviser la chaîne $items en un tableau d’éléments de menu
             $middle_index = floor(count($items_array) / 2);
