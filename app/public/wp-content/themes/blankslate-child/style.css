@@ -364,6 +364,10 @@ footer {
         row-gap: 20px;
     }
 
+    .nav-bar>a {
+        padding-bottom: 30px;
+    }
+
     .logo {
         margin-top: 10px;
     }
@@ -399,7 +403,7 @@ footer {
     }
 
     .elementor-10 .elementor-element.elementor-element-b506d1b .elementor-heading-title {
-        font-size: 1.4em !important;
+        font-size: 1.5em !important;
     }
 
     .elementor-element-b506d1b {
@@ -446,6 +450,7 @@ footer {
     padding: 15px;
     border-radius: 10px;
     cursor: pointer;
+    margin-bottom: 30px;
 }
 
 .menu-toggle-icon {
