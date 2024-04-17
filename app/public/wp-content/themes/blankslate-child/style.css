@@ -1,0 +1,504 @@
+/*
+Theme Name: BlankSlate Child
+Theme URI: https://github.com/tidythemes/blankslate
+Template: blankslate
+Author: TidyThemes
+Author URI: https://github.com/tidythemes
+Description: Donations: https://calmestghost.com/donate. BlankSlate is the definitive WordPress boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/blankslate/issues. Thank you.
+Tags: accessibility-ready,one-column,two-columns,custom-menu,featured-images,microformats,sticky-post,threaded-comments,translation-ready
+Version: 2023.1697785352
+Updated: 2023-10-20 07:02:32
+
+*/
+
+/* ********************* STYLE GENERAL ************************ */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --background-main: #E3D9D0;
+    --background-btn-nav: #DC9F96;
+    --background-btn-hover: #C02E44;
+    --text-font-size17: 1.06rem;
+    --text-color-b: black;
+    --text-color-w: white;
+    --filter-bg-color: #deebff;
+}
+
+body {
+    font-family: syne;
+    color: var(--text-color-b);
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--text-color-b);
+}
+
+/* ********************* STYLE HEADER ************************* */
+
+.nav-bar {
+    padding: 0 0 0 30px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 201px;
+    height: 19px;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-item-14 {
+    padding-right: 30px;
+}
+
+.menu-item-14:hover,
+.admin:hover {
+    font-weight: 700;
+}
+
+.menu-item-13 {
+    display: flex;
+    height: 100%;
+    background-color: var(--background-btn-nav);
+    align-items: center;
+    padding: 0 30px;
+}
+
+.menu-item-13:hover,
+#wpforms-submit-396:hover {
+    background-color: var(--background-btn-hover);
+}
+
+.menu-item-13:first-child,
+.menu-item-13 a:visited {
+    color: var(--text-color-w);
+}
+
+.header {
+    display: none;
+}
+
+.admin {
+    padding-right: 1.5em;
+}
+
+/* ************************ STYLE ACCUEIL ********************** */
+#home-banner {
+    border-bottom: 8px solid #E3D9D0;
+    border-bottom-left-radius: 50% 9%;
+    border-bottom-right-radius: 50% 9%;
+}
+
+/*filter: drop-shadow(-3px -1px 4px rgb(0, 0, 0));*/
+/* ************************ STYLE COMMANDER ***************** */
+
+#wpforms-form-366 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#wpforms-form-366 .wpforms-field-container {
+    width: 50%;
+}
+
+#wpforms-366-field_1 {
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    padding-left: 20%;
+}
+
+#wpforms-366-field_1-container {
+    background: #fff;
+    border-radius: 5px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 90%;
+}
+
+
+#wpforms-form-366 .wpforms-submit-container {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+}
+
+#wpforms-submit-366 {
+    width: 99%;
+}
+
+#wpforms-submit-366:hover {
+    background: var(--background-btn-hover);
+}
+
+.elementor-element-11d6f97 {
+    border-left: solid 1px var(--text-color-w);
+    width: 31.281rem;
+}
+
+.elementor-element-9da7d99 .elementor-widget-container {
+    position: relative;
+    top: -25px;
+}
+
+/* ************************************** style bouton quantite ************************ */
+
+/* Masquer les flèches de contrôle par défaut */
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    appearance: textfield;
+}
+
+.wpforms-field-number {
+    position: relative;
+
+
+}
+
+/* Styles pour le bouton + */
+.wpforms-field-number::after {
+    content: "+";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--background-btn-nav);
+    width: 40%;
+    height: 48%;
+    color: var(--text-color-w);
+    border-top-right-radius: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+/* Styles pour le bouton - */
+.wpforms-field-number::before {
+    content: "-";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--background-btn-nav);
+    width: 40%;
+    color: var(--text-color-w);
+    height: 48%;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*faire disparaitre le focus du champ nombre*/
+#wpforms-366-field_1:focus {
+    border: none;
+    box-shadow: none;
+}
+
+
+/* ********************************* STYLE FORMULAIRE CONTACT *************************** */
+.wpforms-required-label {
+    display: none;
+}
+
+#wpforms-form-396 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#wpforms-form-396 .wpforms-field-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#wpforms-396-field_2-container,
+#wpforms-396-field_3-container,
+#wpforms-396-field_8-container {
+    border-right: solid 1px #fff;
+}
+
+#wpforms-396-field_3-container {
+    grid-row: 2;
+}
+
+#wpforms-396-field_8-container {
+    grid-row: 3;
+}
+
+
+#wpforms-396-field_5-container,
+#wpforms-396-field_6-container,
+#wpforms-396-field_7-container {
+    padding-left: 50px;
+}
+
+#wpforms-396-field_2,
+#wpforms-396-field_3,
+#wpforms-396-field_8 {
+    max-width: 90%;
+}
+
+#wpforms-396-field_5,
+#wpforms-396-field_6,
+#wpforms-396-field_7 {
+    max-width: 100%;
+}
+
+#wpforms-form-396 .wpforms-submit-container {
+    text-align: center;
+    padding: 30px 0 60px 0;
+}
+
+#wpforms-submit-396 {
+    width: 198px;
+}
+
+#wpforms-submit-396:hover {
+    background: var(--background-btn-hover);
+}
+
+
+
+
+/* ************************ STYLE FOOTER ********************** */
+footer {
+    text-align: center;
+    padding: 20PX 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* ************************ responsive *************************** */
+
+@media screen and (max-width:770px) {
+    .logo {
+        object-fit: contain;
+    }
+
+    .menu {
+        width: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .menu-item-14 {
+        padding-bottom: 8px;
+        padding-left: 30px;
+
+    }
+
+
+    #wpforms-396-field_2-container {
+        padding-top: 2.2em;
+    }
+
+    #wpforms-396-field_2-container>label {
+        font-size: 1em;
+    }
+
+    #wpforms-396-field_2-container,
+    #wpforms-396-field_3-container,
+    #wpforms-396-field_8-container {
+        padding-left: 1em;
+    }
+
+    #wpforms-396-field_5-container,
+    #wpforms-396-field_6-container,
+    #wpforms-396-field_7-container {
+        padding-left: 1em;
+        width: 90%;
+    }
+
+    #wpforms-396-field_5-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    footer {
+        margin: 15px;
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+
+    .nav-bar {
+        padding: 0;
+        align-items: center;
+        height: auto;
+        padding: 20px 20px 0 20px;
+        row-gap: 20px;
+    }
+
+    .nav-bar>a {
+        padding-bottom: 30px;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100%;
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu-item-14 {
+        padding-left: 15px;
+        padding-bottom: 0;
+    }
+
+    .admin {
+        padding-right: 25px;
+    }
+
+    .menu-item-13 {
+        padding: 0 15px;
+        height: 100%;
+    }
+
+    /* *********** titre formulaire de contact ********************** */
+    .elementor-element-03f36b2>.e-con-inner {
+        width: 80% !important;
+    }
+
+    .elementor-10 .elementor-element.elementor-element-b506d1b .elementor-heading-title {
+        font-size: 1.5em !important;
+    }
+
+    .elementor-element-b506d1b {
+        width: 95% !important;
+    }
+
+    .elementor-element-b506d1b .elementor-widget-container h2::after {
+        content: ' de livraison:';
+
+    }
+
+    .elementor-10 .elementor-element.elementor-element-11d6f97 {
+        display: none;
+    }
+
+    .elementor-element-11d6f97 {
+        border: none;
+    }
+
+    /* *********************** champs formulaire de contact ******************** */
+    #wpforms-form-396 .wpforms-field-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+    }
+
+    #wpforms-396-field_2-container,
+    #wpforms-396-field_3-container,
+    #wpforms-396-field_8-container {
+        border-right: none;
+    }
+}
+
+
+
+/**********************burger*************************/
+
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: solid 3px var(--background-btn-hover);
+    height: 70%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.menu-toggle-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--background-btn-nav);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle-icon::before,
+.menu-toggle-icon::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: var(--background-btn-nav);
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle-icon::before {
+    top: -6px;
+}
+
+.menu-toggle-icon::after {
+    bottom: -6px;
+}
+
+@media screen and (max-width: 590px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+        width: 100%;
+        background-color: #f8f8f8;
+    }
+
+    #menu.open {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu li {
+        margin: 1rem 0;
+    }
+}
